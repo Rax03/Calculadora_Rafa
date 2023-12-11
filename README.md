@@ -1,1 +1,1 @@
-#Juego de Naipes programado por Rafa Luque 
+#Calculadora creada por Rafa Luque 
