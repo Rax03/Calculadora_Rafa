@@ -10,25 +10,25 @@ public class Main {
         do{
             do {
                 System.out.print("*************************\n"+
-                        "Introduce un operando 1 \n"+
+                        "Introduce el primer numero \n"+
                         "************************* \n"+
                         " ");
                 try {
                     operando1 = teclado.nextInt();
                 }catch (Exception e) {
-                    System.out.println("Inserte un numero");
+                    System.out.println("Solo están permitidos los números");
                     teclado.nextLine();
                 }
             }while (operando1==-1);
             do {
                 System.out.print("*************************\n"+
-                        "Introduce un operando 2\n"+
+                        "Introduce el segundo numero\n"+
                         "************************* \n"+
                         " ");
                 try {
                     operando2 = teclado.nextInt();
                 } catch (Exception e) {
-                    System.out.println("Inserte un numero");
+                    System.out.println("Solo están permitidos los números");
                     teclado.nextLine();
                 }
             }while (operando2==-1);
