@@ -9,40 +9,44 @@ public class Main {
         int opcion = 0; // la opción que elige el usuario
         do{
             do {
-                System.out.print("*************************\n"+
-                        "Introduce el primer numero \n"+
-                        "************************* \n"+
-                        " ");
-                try {
-                    operando1 = teclado.nextInt();
-                }catch (Exception e) {
-                    System.out.println("Solo están permitidos los números");
-                    teclado.nextLine();
-                }
-            }while (operando1==-1);
-            do {
-                System.out.print("*************************\n"+
-                        "Introduce el segundo numero\n"+
-                        "************************* \n"+
-                        " ");
-                try {
-                    operando2 = teclado.nextInt();
-                } catch (Exception e) {
-                    System.out.println("Solo están permitidos los números");
-                    teclado.nextLine();
-                }
-            }while (operando2==-1);
-            do {
-                System.out.print("Pulse 1 para sumar \n"
-                        + "Pulsa 2 para restar \n"
-                        + "Pulsa 3 para multiplicar\n"
-                        + "Pulsa 4 para dividir\n"
-                        + "Pulsa 5 para salir del programa\n ");
-                try {
-                    opcion = teclado.nextInt();
-                } catch (Exception e) {
-                    teclado.nextLine();
-                }
+                do {
+
+                    System.out.print("Pulse 1 para sumar \n"
+                            + "Pulsa 2 para restar \n"
+                            + "Pulsa 3 para multiplicar\n"
+                            + "Pulsa 4 para dividir\n"
+                            + "Pulsa 5 para salir del programa\n ");
+                    try {
+                        opcion = teclado.nextInt();
+                    } catch (Exception e) {
+                        teclado.nextLine();
+                    }
+                }while (opcion==0);
+                do {
+                    System.out.print("*************************\n"+
+                            "Introduce el primer numero \n"+
+                            "************************* \n"+
+                            " ");
+                    try {
+                        operando1 = teclado.nextInt();
+                    }catch (Exception e) {
+                        System.out.println("Solo están permitidos los números");
+                        teclado.nextLine();
+                    }
+                }while (operando1==-1);
+                do {
+                    System.out.print("*************************\n"+
+                            "Introduce el segundo numero\n"+
+                            "************************* \n"+
+                            " ");
+                    try {
+                        operando2 = teclado.nextInt();
+                    } catch (Exception e) {
+                        System.out.println("Solo están permitidos los números");
+                        teclado.nextLine();
+                    }
+                }while (operando2==-1);
+
             }while (opcion==0);
             switch(opcion){
                 case 1:
