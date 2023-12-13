@@ -12,7 +12,6 @@ public class Main {
                opcion = opcionesUsuario();
                operaciones(opcion);
 
-
             System.out.println();
         } while (opcion != 5);
         System.out.print("************************************\n" +
@@ -70,33 +69,53 @@ public class Main {
 
     }
     public static int suma(int resultado){
+        Scanner teclado = new Scanner(System.in);
         int operando1 =0;
         int operando2 =0;
+        System.out.println("Introduce un numero");
+        operando1=teclado.nextInt();
+        System.out.println("Introduce un numero");
+        operando2=teclado.nextInt();
         resultado=operando1+operando2;
-        return(resultado);
+        return resultado;
 
     }
     public static int resta(int resultado) {
+        Scanner teclado = new Scanner(System.in);
         int operando1 = 0;
         int operando2 = 0;
+        System.out.println("Introduce un numero");
+        operando1=teclado.nextInt();
+        System.out.println("Introduce un numero");
+        operando2=teclado.nextInt();
         resultado = operando1 - operando2;
-        return (resultado);
+        return resultado;
     }
     public static int multiplica(int resultado) {
+        Scanner teclado = new Scanner(System.in);
         int operando1 = 0;
         int operando2 = 0;
+        System.out.println("Introduce un numero");
+        operando1=teclado.nextInt();
+        System.out.println("Introduce un numero");
+        operando2=teclado.nextInt();
         resultado = operando1 * operando2;
-        return (resultado);
+        return resultado;
     }
     public static int divide(int resultado) {
+        Scanner teclado = new Scanner(System.in);
         int operando1 = 0;
         int operando2 = 0;
+        System.out.println("Introduce un numero");
+        operando1=teclado.nextInt();
+        System.out.println("Introduce un numero");
+        operando2=teclado.nextInt();
         if (operando1>0) {
             resultado = operando1 / operando2;
         }else{
             System.out.println("No se puede dividir por 0");
         }
-        return (resultado);
+        return resultado;
     }
 
 }
